@@ -1,4 +1,3 @@
-import { Divider } from "@mui/material";
 import { useState } from "react";
 import TopNavigation from "../components/TopNavigation";
 import CenterContent from "../components/CenterContent";
@@ -15,7 +14,6 @@ const HomePage = () => {
                 centerContentState={centerContentState}
                 updateCenterContentState={setCenterContentState}
             />
-            <Divider style={{ width: "100%" }} variant="middle" />
             <CenterContent centerContentState={centerContentState} />
         </>
     );
