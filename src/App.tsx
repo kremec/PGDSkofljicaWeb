@@ -1,4 +1,4 @@
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import {CssBaseline, ThemeProvider, createTheme, responsiveFontSizes} from "@mui/material";
 import { Outlet } from "react-router";
 
 const appTheme = createTheme({
@@ -14,14 +14,17 @@ const appTheme = createTheme({
     palette: {
         mode: "light",
         primary: {
-            main: "#E85A4F",
-        },
+            main: "#000000",
+        }
     },
+    typography: {
+        fontFamily: '"Raleway"'
+    }
 });
 
 function App() {
     return (
-        <ThemeProvider theme={appTheme}>
+        <ThemeProvider theme={responsiveFontSizes(appTheme)}>
             <CssBaseline />
             <Outlet />
         </ThemeProvider>
