@@ -1,5 +1,4 @@
 import {Stack, Typography} from "@mui/material";
-import Image from 'mui-image'
 
 const HomeContent = () => {
     return (
@@ -67,7 +66,7 @@ const HomeContent = () => {
                     <br/><br/>
                     Prva svetovna vojna je zaustavila delovanje društva, vedno pa je sodelovalo pri nezgodah in požarih.
                 </Typography>
-                <Image src="/images/zgodovina/zgodovina_1.jpg" sx={{paddingY: '1vh'}}/>
+                <img src="/images/zgodovina/zgodovina_1.jpg"/>
 
                 <Typography variant="h4">
                     1920 - 1940
@@ -136,7 +135,7 @@ const HomeContent = () => {
                     verižno napajanje. Kljub denarni stiski so kupili prenosno črpalko Rosenbauer, s pretokom vode 800
                     litrov na minuto.
                 </Typography>
-                <Image src="/images/zgodovina/zgodovina_2.jpg" sx={{paddingY: '1vh', maxWidth: '50vw'}}/>
+                <img src="/images/zgodovina/zgodovina_2.jpg"/>
 
                 <Typography variant="h4">
                     1970 - 1980
@@ -178,7 +177,7 @@ const HomeContent = () => {
                     in ponoči, ima 3.500 litrov vode in 2 hitri cevi, kar omogoča takojšnje delovanje po prihodu na
                     mesto intervencije. Slavnostni prevzem vozila, je bil ob 100 letnici delovanja PGD Škofljica.
                 </Typography>
-                <Image src="/images/zgodovina/zgodovina_3.jpg" sx={{paddingY: '1vh'}}/>
+                <img src="/images/zgodovina/zgodovina_3.jpg"/>
 
                 <Typography variant="h4">
                     2000 - 2010

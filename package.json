@@ -18,9 +18,9 @@
     "@types/react-router-dom": "^5.3.3",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
-    "mui-image": "^1.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed",
     "react-router": "^6.16.0",
     "react-router-dom": "^6.16.0",
     "sort-by": "^0.0.2"

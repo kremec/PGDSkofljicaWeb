@@ -18,7 +18,7 @@ const appTheme = createTheme({
         }
     },
     typography: {
-        fontFamily: '"Raleway"'
+        fontFamily: 'Raleway'
     },
     breakpoints: {
         values: {
