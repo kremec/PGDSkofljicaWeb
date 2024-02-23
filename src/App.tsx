@@ -18,7 +18,8 @@ const appTheme = createTheme({
         }
     },
     typography: {
-        fontFamily: 'Raleway'
+        fontFamily: 'Raleway',
+        htmlFontSize: 15,
     },
     breakpoints: {
         values: {
@@ -32,8 +33,9 @@ const appTheme = createTheme({
 });
 
 function App() {
+    const theme = responsiveFontSizes(appTheme);
     return (
-        <ThemeProvider theme={responsiveFontSizes(appTheme)}>
+        <ThemeProvider theme={theme}>
             <CssBaseline />
             <Outlet />
         </ThemeProvider>

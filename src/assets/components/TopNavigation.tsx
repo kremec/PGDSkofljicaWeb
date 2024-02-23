@@ -10,12 +10,11 @@ import {
 } from "@mui/material";
 import {
     Home,
-    History,
     FireTruck,
     FireExtinguisher,
     AlternateEmail,
     ExpandLess,
-    ExpandMore,
+    ExpandMore, CalendarMonth,
 } from "@mui/icons-material";
 import {useState} from "react";
 
@@ -72,7 +71,7 @@ const TopNavigation = ({updateCenterContentState}: Props) => {
                         <Divider orientation="vertical" variant="middle" flexItem/>
                         <Button onClick={handleHistoryButtonClick} sx={{paddingX: '2vh'}}>
                             <Stack alignItems={"center"} spacing={1} direction={"row"}>
-                                <History/>
+                                <CalendarMonth/>
                                 <Typography variant="body2">Zgodovina</Typography>
                             </Stack>
                         </Button>
@@ -138,7 +137,7 @@ const TopNavigation = ({updateCenterContentState}: Props) => {
                                     </ListItemButton>
                                     <ListItemButton color="inherit" onClick={handleHistoryButtonClick}>
                                         <Stack alignItems={"center"} spacing={2} direction={"row"}>
-                                            <History/>
+                                            <CalendarMonth/>
                                             <Stack alignItems={"left"} direction={"column"}>
                                                 <Typography variant="body1">Zgodovina</Typography>
                                                 <Typography variant="caption">Zgodovina razvoja društva</Typography>

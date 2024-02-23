@@ -23,8 +23,9 @@ const HomeContent = () => {
                             Društvo<br/>
                             ŠKOFLJICA
                         </Typography>
-                        <Divider style={{marginTop:'10',marginBottom:'10'}}/>
-
+                        <div style={{marginTop: '10px'}} />
+                        <Divider />
+                        <div style={{marginBottom: '20px'}} />
                         <Box
                             width="100%"
                             component="img"

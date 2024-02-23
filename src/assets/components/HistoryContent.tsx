@@ -7,7 +7,7 @@ const HomeContent = () => {
             alignItems: 'center',
             justifyContent: 'center',
         }}>
-            <Stack spacing={1} sx={{width: '90vw'}} display={"flex"} paddingY={3}>
+            <Stack spacing={1} sx={{width: '80vw'}} display={"flex"} paddingY={3}>
                 <Typography variant="h3" textAlign={"center"}>
                     Zgodovina PGD Škofljica
                 </Typography>
