@@ -12,8 +12,8 @@ const HomeContent = () => {
                     Vozni park
                 </Typography>
                 <Divider/>
-                <Grid container direction="row" spacing={2} textAlign={"center"}>
-                    <Grid item md={12} lg={6}>
+                <Grid container direction="row" textAlign={"center"}>
+                    <Grid item md={12} lg={6} padding={1}>
                         <Card>
                             <CardMedia component="img" image="/images/vozniPark/ac_1.jpg"
                                        sx={{ objectFit: "contain" }}  />
@@ -32,7 +32,7 @@ const HomeContent = () => {
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item md={12} lg={6}>
+                    <Grid item md={12} lg={6} padding={1}>
                         <Card>
                             <CardMedia component="img" image="/images/vozniPark/gvc_1.jpg"
                                        sx={{ objectFit: "contain" }} />
@@ -53,7 +53,7 @@ const HomeContent = () => {
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item md={12} lg={6}>
+                    <Grid item md={12} lg={6} padding={1}>
                         <Card>
                             <CardMedia component="img" image="/images/vozniPark/gvm_1.jpg"
                                        sx={{ objectFit: "contain" }} />
@@ -70,7 +70,7 @@ const HomeContent = () => {
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item md={12} lg={6}>
+                    <Grid item md={12} lg={6} padding={1}>
                         <Card>
                             <CardMedia component="img" image="/images/vozniPark/gv_1.jpg"
                                        sx={{ objectFit: "contain" }} />

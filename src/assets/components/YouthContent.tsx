@@ -1,6 +1,5 @@
 import {
     Divider,
-    Grid,
     ImageList,
     ImageListItem,
     ImageListItemBar,
@@ -23,29 +22,29 @@ const HomeContent = () => {
                     Mladina
                 </Typography>
 
-                <Typography>
+                <Typography textAlign={"center"}>
                     Če želite svojega otroka prijaviti na gasilske vaje, kontaktirajte katerega izmed mentorjev preko
                     spodaj navedenih telefonskih številk, ali pa se oglasite na vajah, ki potekajo po spodnjih terminih.
                 </Typography>
                 <Divider/>
-                <Grid container direction="row" spacing={2} textAlign={"center"}>
-                    <Grid item md={12} lg={4}>
+                <Stack direction={{md:"column", lg:"row"}} textAlign={"center"} justifyContent={"space-around"}>
+                    <Typography>
                         <b>Kontakti mentorjev:</b><br/>
                         Gašper Vešligaj: <a href="tel:+386 40 379 212">+386 40 379 212</a><br/>
                         Rok Brglez: <a href="tel:+386 41 659 133">+386 41 659 133</a><br/>
                         Klemen Remec: <a href="tel:+386 70 754 018">+386 70 754 018</a>
-                    </Grid>
-                    <Grid item md={12} lg={4}>
+                    </Typography>
+                    <Typography>
                         <b>Tedensko srečanje mladine:</b><br/>
                         Pionirji (od 7 do 11 let): četrtek ob 18. uri<br/>
                         Mladinci (od 12 do 15 let): torek ob 18. uri<br/>
                         Pripravniki (od 16 do 18 let): torek ob 18. uri
-                    </Grid>
-                    <Grid item md={12} lg={4}>
+                    </Typography>
+                    <Typography>
                         <b>Naslednja tekmovanja:</b><br/>
                         Kviz - 2. marec 2024 - OŠ Ig
-                    </Grid>
-                </Grid>
+                    </Typography>
+                </Stack>
                 <Divider/>
 
                 <ImageList variant="masonry" cols={small ? 1 : 2} gap={10}>
