@@ -17,13 +17,13 @@ const HomeContent = () => {
     // Remove watermark
     useEffect(() => {
         function handleElementLoaded() {
-            const element = document.querySelector('a[href="https://elfsight.com/social-feed-widget/?utm_source=websites&utm_medium=clients&utm_content=social-feed&utm_term=localhost&utm_campaign=free-widget"]');
+            const element = document.querySelector('a[href="https://elfsight.com/social-feed-widget/?utm_source=websites&utm_medium=clients&utm_content=social-feed&utm_term=subbyte.net&utm_campaign=free-widget"]');
             if (element) {
                 (element as HTMLElement).style.display = "none";
             }
         }
         function checkElement() {
-            const element = document.querySelector('a[href="https://elfsight.com/social-feed-widget/?utm_source=websites&utm_medium=clients&utm_content=social-feed&utm_term=localhost&utm_campaign=free-widget"]');
+            const element = document.querySelector('a[href="https://elfsight.com/social-feed-widget/?utm_source=websites&utm_medium=clients&utm_content=social-feed&utm_term=subbyte.net&utm_campaign=free-widget"]');
             if (element) {
                 handleElementLoaded();
                 clearInterval(intervalId);
