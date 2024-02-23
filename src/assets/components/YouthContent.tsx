@@ -31,9 +31,9 @@ const HomeContent = () => {
                 <Grid container direction="row" spacing={2} textAlign={"center"}>
                     <Grid item md={12} lg={4}>
                         <b>Kontakti mentorjev:</b><br/>
-                        Gašper Vešligaj: +386 40 379 212<br/>
-                        Rok Brglez: +386 41 659 133<br/>
-                        Klemen Remec: +386 70 754 018
+                        Gašper Vešligaj: <a href="tel:+386 40 379 212">+386 40 379 212</a><br/>
+                        Rok Brglez: <a href="tel:+386 41 659 133">+386 41 659 133</a><br/>
+                        Klemen Remec: <a href="tel:+386 70 754 018">+386 70 754 018</a>
                     </Grid>
                     <Grid item md={12} lg={4}>
                         <b>Tedensko srečanje mladine:</b><br/>

@@ -13,15 +13,15 @@ const HomeContent = () => {
               </Typography>
 
               <Typography>
-                  URL: https://www.pgd-skofljica.si<br/>
-                  E-pošta: pgdskofljica@siol.net
+                  Spletna stran: <a href="https://www.pgd-skofljica.si">https://www.pgd-skofljica.si</a><br/>
+                  E-pošta: <a href="mailto:pgdskofljica@siol.net">pgdskofljica@siol.net</a>
                   <br/><br/>
                   <br/><br/>
                   Predsednik:<br/>
-                  Franc Kraškovic: +386 31 628 200
+                  Franc Kraškovic: <a href="tel:+386 31 628 200">+386 31 628 200</a>
                   <br/><br/>
                   Poveljnik:<br/>
-                  Matic Trtnik: +386 41 561 934
+                  Matic Trtnik: <a href="tel:+386 41 561 934">+386 41 561 934</a>
               </Typography>
 
               <iframe

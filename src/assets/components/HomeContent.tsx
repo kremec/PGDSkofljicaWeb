@@ -1,4 +1,4 @@
-import {Divider, Grid, Stack, Typography} from "@mui/material";
+import {Box, Divider, Grid, Stack, Typography} from "@mui/material";
 import SocialMediaWidget from "./SocialMediaWidget.tsx";
 
 const HomeContent = () => {
@@ -10,17 +10,27 @@ const HomeContent = () => {
         }}>
             <Stack spacing={1} sx={{width: '90vw'}} display={"flex"} paddingY={3}>
                 <Grid container direction="row" spacing={2} textAlign={"center"}>
-                    <Grid item md={12} lg={6} textAlign={"left"}>
-                        <img src="/images/PGD_logo_znak.png" width="100px"/>
+                    <Grid item md={12} lg={6} sx={{textAlign: {md: "center", lg: "left"}}}>
+                        <Box
+                            width="25%"
+                            component="img"
+                            alt="Logo"
+                            src="/images/PGD_logo_znak.png"
+                        />
                         <Typography fontWeight={"bold"} variant="h4">
                             Prostovoljno<br/>
                             Gasilsko<br/>
                             Društvo<br/>
                             ŠKOFLJICA
                         </Typography>
-                        <Divider/>
+                        <Divider style={{marginTop:'10',marginBottom:'10'}}/>
 
-                        <img src="/images/operativa.jpg" width="100%"/>
+                        <Box
+                            width="100%"
+                            component="img"
+                            alt="Operativni gasilci PGD Škofljica"
+                            src="/images/operativa.jpg"
+                        />
                         <Typography variant="h5">
                             O nas
                         </Typography>
@@ -37,6 +47,9 @@ const HomeContent = () => {
                         </Typography>
                     </Grid>
                     <Grid item md={12} lg={6}>
+                        <Typography variant="h5" paddingBottom={3}>
+                            Novice in objave
+                        </Typography>
                         <SocialMediaWidget />
                     </Grid>
                 </Grid>

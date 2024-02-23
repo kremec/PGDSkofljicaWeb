@@ -14,7 +14,7 @@ const appTheme = createTheme({
     palette: {
         mode: "light",
         primary: {
-            main: "#000000",
+            main: "#3c3b3b",
         }
     },
     typography: {

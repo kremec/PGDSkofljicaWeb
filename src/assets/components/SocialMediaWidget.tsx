@@ -14,6 +14,7 @@ const HomeContent = () => {
         };
     }, []);
 
+    // Remove watermark
     useEffect(() => {
         function handleElementLoaded() {
             const element = document.querySelector('a[href="https://elfsight.com/social-feed-widget/?utm_source=websites&utm_medium=clients&utm_content=social-feed&utm_term=localhost&utm_campaign=free-widget"]');
@@ -44,7 +45,7 @@ const HomeContent = () => {
     }, []);
 
     return (
-        <div className="elfsight-app-2559c59f-8f5c-4de5-b360-70018ef9f66c" data-elfsight-app-lazy style={{}}></div>
+        <div className="elfsight-app-2559c59f-8f5c-4de5-b360-70018ef9f66c data-elfsight-app-lazy" style={{}}></div>
     );
 };
 
