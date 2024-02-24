@@ -23,16 +23,15 @@ const HomeContent = () => {
                 </Typography>
 
                 <Typography textAlign={"center"}>
-                    Če želite svojega otroka prijaviti na gasilske vaje, kontaktirajte katerega izmed mentorjev preko
-                    spodaj navedenih telefonskih številk, ali pa se oglasite na vajah, ki potekajo po spodnjih terminih.
+                    Želite svojega otroka prijaviti na gasilske vaje? Kontaktirajte mentorje preko
+                    spodaj navedenih kontaktnih podatkov, ali pa se oglasite na vajah, ki potekajo po navedenih terminih.
                 </Typography>
                 <Divider/>
-                <Stack direction={{md:"column", lg:"row"}} textAlign={"center"} justifyContent={"space-around"}>
+                <Stack direction={{md: "column", lg: "row"}} textAlign={"center"} justifyContent={"space-around"}>
                     <Typography>
                         <b>Kontakti mentorjev:</b><br/>
                         Gašper Vešligaj: <a href="tel:+386 40 379 212">+386 40 379 212</a><br/>
-                        Rok Brglez: <a href="tel:+386 41 659 133">+386 41 659 133</a><br/>
-                        Klemen Remec: <a href="tel:+386 70 754 018">+386 70 754 018</a>
+                        Mail: <a href="mailto:mladina@pgd-skofljica.si">mladina@pgd-skofljica.si</a>
                     </Typography>
                     <Typography>
                         <b>Tedensko srečanje mladine:</b><br/>
