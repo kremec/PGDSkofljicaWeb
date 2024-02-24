@@ -7,6 +7,7 @@ import {
     Typography,
     useMediaQuery
 } from "@mui/material";
+import ImagePopover from "./ImagePopover.tsx";
 
 const HomeContent = () => {
     const small = useMediaQuery("(max-width:999px)");
@@ -49,12 +50,7 @@ const HomeContent = () => {
                 <ImageList variant="masonry" cols={small ? 1 : 2} gap={10}>
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
-                            <img
-                                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                src={`${item.img}?w=248&fit=crop&auto=format`}
-                                alt={item.title}
-                                loading="lazy"
-                            />
+                            <ImagePopover src={item.img} alt={item.img} width={"100%"}/>
                             <ImageListItemBar position="below" title={item.title}/>
                         </ImageListItem>
                     ))}
