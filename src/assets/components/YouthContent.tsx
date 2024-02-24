@@ -25,14 +25,15 @@ const HomeContent = () => {
 
                 <Typography textAlign={"center"}>
                     Želite svojega otroka prijaviti na gasilske vaje? Kontaktirajte mentorje preko
-                    spodaj navedenih kontaktnih podatkov, ali pa se oglasite na vajah, ki potekajo po navedenih terminih.
+                    spodaj navedenih kontaktnih podatkov, ali pa se oglasite na vajah, ki potekajo po navedenih
+                    terminih.
                 </Typography>
                 <Divider/>
                 <Stack direction={{md: "column", lg: "row"}} textAlign={"center"} justifyContent={"space-around"}>
                     <Typography>
                         <b>Kontakti mentorjev:</b><br/>
-                        Gašper Vešligaj: <a href="tel:+386 40 379 212">+386 40 379 212</a><br/>
-                        Mail: <a href="mailto:mladina@pgd-skofljica.si">mladina@pgd-skofljica.si</a>
+                        Gašper Vešligaj: <a style={{unicodeBidi: "bidi-override", direction: "rtl"}}>212 973 04 683+</a><br/>
+                        Mail: <a style={{unicodeBidi: "bidi-override", direction: "rtl"}}>is.acijlfoks-dgp@anidalm</a>
                     </Typography>
                     <Typography>
                         <b>Tedensko srečanje mladine:</b><br/>
