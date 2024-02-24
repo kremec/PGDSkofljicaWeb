@@ -1,6 +1,6 @@
 import {useEffect} from "react";
 
-const HomeContent = () => {
+const SocialMediaWidget = () => {
     useEffect(() => {
         const script = document.createElement('script');
         script.src = 'https://static.elfsight.com/platform/platform.js';
@@ -49,4 +49,4 @@ const HomeContent = () => {
     );
 };
 
-export default HomeContent;
+export default SocialMediaWidget;

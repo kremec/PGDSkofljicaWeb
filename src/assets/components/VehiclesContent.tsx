@@ -1,4 +1,5 @@
 import {Card, CardContent, CardMedia, Divider, Grid, Stack, Typography} from "@mui/material";
+import ImagePopover from "./ImagePopover.tsx";
 
 const HomeContent = () => {
     return (
@@ -15,8 +16,10 @@ const HomeContent = () => {
                 <Grid container direction="row" textAlign={"center"}>
                     <Grid item md={12} lg={6} padding={1}>
                         <Card>
-                            <CardMedia component="img" image="/images/vozniPark/ac_1.jpg"
-                                       sx={{ objectFit: "contain" }}  />
+                            <CardMedia component="div"
+                                       sx={{objectFit: "contain"}}>
+                                <ImagePopover src={"/images/vozniPark/ac_1.jpg"} alt={"AC"} width={"100%"}/>
+                            </CardMedia>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
                                     AC
@@ -27,15 +30,18 @@ const HomeContent = () => {
                                     Posadka vozila: 1 + 2<br/>
                                     Črpalka: Turboinštitut - 1600 l/min<br/>
                                     Količina vode: 6300 litrov<br/>
-                                    Vozilo je zaradi večje količine vode namenjeno oskrbi požarišča z vodo in prevozu pitne vode.
+                                    Vozilo je zaradi večje količine vode namenjeno oskrbi požarišča z vodo in prevozu
+                                    pitne vode.
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
                     <Grid item md={12} lg={6} padding={1}>
                         <Card>
-                            <CardMedia component="img" image="/images/vozniPark/gvc_1.jpg"
-                                       sx={{ objectFit: "contain" }} />
+                            <CardMedia component="div"
+                                       sx={{objectFit: "contain"}}>
+                                <ImagePopover src={"/images/vozniPark/gvc_1.jpg"} alt={"GVC 16/25"} width={"100%"}/>
+                            </CardMedia>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
                                     GVC 16/25
@@ -47,16 +53,20 @@ const HomeContent = () => {
                                     Črpalka: Rosenbauer NH20 - 2000 l/min<br/>
                                     Količina vode: 3400 litrov<br/>
                                     Vozilo ima dva hitronapadalna navijaka.<br/>
-                                    Vozilo je namenjeno gašenju in reševanju pri požarih in manjših tehničnih intervencijah.
-                                    Značilnosti vozila so večja količina vode v rezervoarju in možnosti izvedbe hitrega napada
+                                    Vozilo je namenjeno gašenju in reševanju pri požarih in manjših tehničnih
+                                    intervencijah.
+                                    Značilnosti vozila so večja količina vode v rezervoarju in možnosti izvedbe hitrega
+                                    napada
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
                     <Grid item md={12} lg={6} padding={1}>
                         <Card>
-                            <CardMedia component="img" image="/images/vozniPark/gvm_1.jpg"
-                                       sx={{ objectFit: "contain" }} />
+                            <CardMedia component="div"
+                                       sx={{objectFit: "contain"}}>
+                                <ImagePopover src={"/images/vozniPark/gvm_1.jpg"} alt={"GVM-1"} width={"100%"}/>
+                            </CardMedia>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
                                     GVM-1
@@ -72,8 +82,10 @@ const HomeContent = () => {
                     </Grid>
                     <Grid item md={12} lg={6} padding={1}>
                         <Card>
-                            <CardMedia component="img" image="/images/vozniPark/gv_1.jpg"
-                                       sx={{ objectFit: "contain" }} />
+                            <CardMedia component="div"
+                                       sx={{objectFit: "contain"}}>
+                                <ImagePopover src={"/images/vozniPark/gv_1.jpg"} alt={"GV-1"} width={"100%"}/>
+                            </CardMedia>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
                                     GV-1
@@ -83,7 +95,8 @@ const HomeContent = () => {
                                     Nadgradnja: Gasilska vozila Pušnik (2001)<br/>
                                     Posadka vozila: 8+1<br/>
                                     Črpalka: Prenosna motorna brizgalna Rosenbauer 8/8<br/>
-                                    Vozilo je namenjeno gašenju požarov, prevozu moštva, orodja in opreme na kraj intervencije.
+                                    Vozilo je namenjeno gašenju požarov, prevozu moštva, orodja in opreme na kraj
+                                    intervencije.
                                 </Typography>
                             </CardContent>
                         </Card>

@@ -22,7 +22,7 @@ type CenterContentState = "Home" | "History" | "Vehicles" | "Youth" | "Contact";
 
 interface Props {
     centerContentState: CenterContentState;
-    updateCenterContentState: (test: CenterContentState) => void;
+    updateCenterContentState: (content: CenterContentState) => void;
 }
 
 const TopNavigation = ({updateCenterContentState}: Props) => {
