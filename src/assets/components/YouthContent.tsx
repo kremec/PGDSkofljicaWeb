@@ -51,7 +51,7 @@ const HomeContent = () => {
                 <ImageList variant="masonry" cols={small ? 1 : 2} gap={10}>
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
-                            <ImagePopover src={item.img} alt={item.img} width={"100%"}/>
+                            <ImagePopover src={item.img} alt={item.title} width={"100%"}/>
                             <ImageListItemBar position="below" title={item.title}/>
                         </ImageListItem>
                     ))}
