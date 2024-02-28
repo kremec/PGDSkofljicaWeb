@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Box, Dialog, DialogContent, DialogTitle} from "@mui/material";
+import {Box, Dialog, DialogTitle} from "@mui/material";
 
 interface Props {
     src: string;
