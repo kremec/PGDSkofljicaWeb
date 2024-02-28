@@ -1,5 +1,5 @@
 import {Stack, Typography} from "@mui/material";
-import ModalImage from "react-modal-image";
+import ImagePopover from "./ImagePopover.tsx";
 
 const HomeContent = () => {
     return (
@@ -68,7 +68,7 @@ const HomeContent = () => {
                     Prva svetovna vojna je zaustavila delovanje društva, vedno pa je sodelovalo pri nezgodah in požarih.
                 </Typography>
 
-                <ModalImage small="/images/zgodovina/zgodovina_1.jpg" large="/images/zgodovina/zgodovina_1.jpg" alt={""} />
+                <ImagePopover src={"/images/zgodovina/zgodovina_1.jpg"} alt={"Zgodovina 1"} width={"100%"}/>
 
                 <Typography variant="h4">
                     1920 - 1940
@@ -138,7 +138,7 @@ const HomeContent = () => {
                     litrov na minuto.
                 </Typography>
 
-                <ModalImage small="/images/zgodovina/zgodovina_2.jpg" large="/images/zgodovina/zgodovina_2.jpg" alt={""} />
+                <ImagePopover src={"/images/zgodovina/zgodovina_2.jpg"} alt={"Zgodovina 2"} width={"100%"}/>
 
                 <Typography variant="h4">
                     1970 - 1980
@@ -181,7 +181,7 @@ const HomeContent = () => {
                     mesto intervencije. Slavnostni prevzem vozila, je bil ob 100 letnici delovanja PGD Škofljica.
                 </Typography>
 
-                <ModalImage small="/images/zgodovina/zgodovina_3.jpg" large="/images/zgodovina/zgodovina_3.jpg" alt={""} />
+                <ImagePopover src={"/images/zgodovina/zgodovina_3.jpg"} alt={"Zgodovina 3"} width={"100%"}/>
 
                 <Typography variant="h4">
                     2000 - 2010
