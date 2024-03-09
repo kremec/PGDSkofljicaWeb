@@ -1,5 +1,5 @@
 import {Card, CardContent, CardMedia, Divider, Grid, Stack, Typography} from "@mui/material";
-import ModalImage from "react-modal-image";
+import ImagePopover from "./ImagePopover.tsx";
 
 const HomeContent = () => {
     return (
@@ -18,7 +18,7 @@ const HomeContent = () => {
                         <Card>
                             <CardMedia component="div"
                                        sx={{objectFit: "contain"}}>
-                                <ModalImage small={"/images/vozniPark/ac_1.jpg"} large={"/images/vozniPark/ac_1.jpg"} alt={"AC"}/>
+                                <ImagePopover src={"/images/vozniPark/ac_1.jpg"} alt={"AC"} width={"100%"}/>
                             </CardMedia>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
@@ -40,7 +40,7 @@ const HomeContent = () => {
                         <Card>
                             <CardMedia component="div"
                                        sx={{objectFit: "contain"}}>
-                                <ModalImage small={"/images/vozniPark/gvc_1.jpg"} large={"/images/vozniPark/gvc_1.jpg"} alt={"GVC 16/25"}/>
+                                <ImagePopover src={"/images/vozniPark/gvc_1.jpg"} alt={"GVC 16/25"} width={"100%"}/>
                             </CardMedia>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
@@ -65,7 +65,7 @@ const HomeContent = () => {
                         <Card>
                             <CardMedia component="div"
                                        sx={{objectFit: "contain"}}>
-                                <ModalImage small={"/images/vozniPark/gvm_1.jpg"} large={"/images/vozniPark/gvm_1.jpg"} alt={"GVM 1"}/>
+                                <ImagePopover src={"/images/vozniPark/gvm_1.jpg"} alt={"GVM-1"} width={"100%"}/>
                             </CardMedia>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
@@ -84,7 +84,7 @@ const HomeContent = () => {
                         <Card>
                             <CardMedia component="div"
                                        sx={{objectFit: "contain"}}>
-                                <ModalImage small={"/images/vozniPark/gv_1.jpg"} large={"/images/vozniPark/gv_1.jpg"} alt={"GV 1"}/>
+                                <ImagePopover src={"/images/vozniPark/gv_1.jpg"} alt={"GV-1"} width={"100%"}/>
                             </CardMedia>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
