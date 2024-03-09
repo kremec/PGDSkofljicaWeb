@@ -1,6 +1,6 @@
 import {Box, Divider, Grid, Typography} from "@mui/material";
 import SocialMediaWidget from "./SocialMediaWidget.tsx";
-import ImagePopover from "./ImagePopover.tsx";
+import ModalImage from "react-modal-image";
 
 const HomeContent = () => {
     return (
@@ -34,7 +34,7 @@ const HomeContent = () => {
                         <div style={{marginTop: '10px'}}/>
                         <Divider/>
                         <div style={{marginBottom: '20px'}}/>
-                        <ImagePopover src={"/images/operativa.jpg"} alt={"Operativni gasilci PGD Škofljica"} width={"100%"} />
+                        <ModalImage small={"/images/operativa.jpg"} large={"/images/operativa.jpg"} alt={"Operativni gasilci PGD Škofljica"} />
                         <Typography variant="h5">
                             O nas
                         </Typography>

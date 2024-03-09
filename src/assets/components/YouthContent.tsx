@@ -7,7 +7,7 @@ import {
     Typography,
     useMediaQuery
 } from "@mui/material";
-import ImagePopover from "./ImagePopover.tsx";
+import ModalImage from "react-modal-image";
 
 const HomeContent = () => {
     const small = useMediaQuery("(max-width:999px)");
@@ -48,10 +48,10 @@ const HomeContent = () => {
                 </Stack>
                 <Divider/>
 
-                <ImageList variant="masonry" cols={small ? 1 : 2} gap={10}>
+                <ImageList style={{textAlign: "center"}} variant="masonry" cols={small ? 1 : 2} gap={10}>
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
-                            <ImagePopover src={item.img} alt={item.title} width={"100%"}/>
+                            <ModalImage small={item.img} large={item.img} alt={item.title}/>
                             <ImageListItemBar position="below" title={item.title}/>
                         </ImageListItem>
                     ))}
