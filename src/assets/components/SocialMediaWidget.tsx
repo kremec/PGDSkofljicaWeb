@@ -45,7 +45,7 @@ const SocialMediaWidget = () => {
     }, []);
 
     return (
-        <div className="elfsight-app-2559c59f-8f5c-4de5-b360-70018ef9f66c data-elfsight-app-lazy" style={{overflow:'hidden'}}></div>
+        <div className="elfsight-app-2559c59f-8f5c-4de5-b360-70018ef9f66c data-elfsight-app-lazy"></div>
     );
 };
 

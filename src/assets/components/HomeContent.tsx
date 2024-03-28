@@ -13,21 +13,19 @@ const HomeContent = () => {
                 <Grid container direction="row" spacing={10} textAlign={"center"}>
                     <Grid item md={12} lg={6}>
                         <Grid container direction="row" spacing={2}>
-                            <Grid item xs={6} display={"flex"} justifyContent={"center"} alignItems={"center"}
+                            <Grid item xs={3} display={"flex"} justifyContent={"center"} alignItems={"center"}
                                   textAlign={"right"}>
                                 <Box
-                                    width="30%"
+                                    width="50%"
                                     component="img"
                                     alt="Logo"
                                     src="/images/PGD_logo_znak.png"
                                 />
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid item xs={9}>
                                 <Typography fontWeight={"bold"} variant="h4">
-                                    Prostovoljno<br/>
-                                    Gasilsko<br/>
-                                    Društvo<br/>
-                                    ŠKOFLJICA
+                                    Prostovoljno gasilsko<br/>
+                                    društvo Škofljica
                                 </Typography>
                             </Grid>
                         </Grid>
@@ -42,12 +40,12 @@ const HomeContent = () => {
                             Smo društvo III. kategorije in osrednje društvo v občini Škofljica. V občini Škofljica
                             deluje šest gasilskih društev, združenih v Gasilsko zvezo Škofljica.
                             <br/><br/>
-                            PGD Škofljica je bilo ustanovljeno leta 1989 in je najstarejše društvo v občini. Delujemo na
-                            območju Škofljice in vasi Zalog, Gumnišče, Glinek, Gorenje Blato, Reber, Dole pri Škofljici
+                            PGD Škofljica je bilo ustanovljeno leta 1898 in je najstarejše društvo v občini. Delujemo na
+                            območju Škofljice in vasi Zalog, Glinek, Gumnišče, Gorenje Blato, Reber, Dole pri Škofljici
                             in Pleše.
                             <br/><br/>
                             Posredujemo pri gašenju požarov, ob poplavah, neurjih in drugih nesrečah. Za uspešno
-                            posredovanje na intervencijah imamo gasilska vozila GV-1, GVM-1, GVC 16/25 in AC 16/50.
+                            posredovanje na intervencijah imamo gasilska vozila GVC-16/35, GV-1, GVM-1, GVC 16/25 in AC 16/50.
                         </Typography>
                     </Grid>
                     <Grid item md={12} lg={6} textAlign={"center"}>
