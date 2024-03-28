@@ -1,4 +1,4 @@
-import {CssBaseline, ThemeProvider, createTheme, responsiveFontSizes} from "@mui/material";
+import { CssBaseline, ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material";
 import { Outlet } from "react-router";
 
 const appTheme = createTheme({
@@ -27,7 +27,7 @@ const appTheme = createTheme({
             sm: 600,
             md: 900,
             lg: 1000,
-            xl: 1536
+            xl: 1500
         }
     }
 });
