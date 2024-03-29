@@ -1,7 +1,7 @@
 import { CssBaseline, ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material";
 import { Outlet } from "react-router";
 
-const appTheme = createTheme({
+export const appTheme = createTheme({
     components: {
         MuiCssBaseline: {
             styleOverrides: {

@@ -1,7 +1,7 @@
 import {Stack, Typography} from "@mui/material";
 import ModalImage from "react-modal-image";
 
-const HomeContent = () => {
+const HistoryContent = () => {
     return (
         <div style={{
             display: 'flex',
@@ -236,4 +236,4 @@ const HomeContent = () => {
     );
 };
 
-export default HomeContent;
+export default HistoryContent;

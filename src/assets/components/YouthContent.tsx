@@ -5,12 +5,10 @@ import {
     ImageListItemBar,
     Stack,
     Typography,
-    useMediaQuery
 } from "@mui/material";
 import ModalImage from "react-modal-image";
 
-const HomeContent = () => {
-    const small = useMediaQuery("(max-width:999px)");
+const YouthContent = () => {
 
     return (
         <div style={{
@@ -48,7 +46,7 @@ const HomeContent = () => {
                 </Stack>
                 <Divider/>
 
-                <ImageList style={{textAlign: "center"}} variant="masonry" cols={small ? 1 : 2} gap={10}>
+                <ImageList style={{textAlign: "center"}} sx={{columnCount: {md: '1 !important', lg: '2 !important', xl: '3 !important'}}} cols={1} variant="masonry" gap={10}>
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
                             <ModalImage small={item.img} large={item.img} alt={item.title}/>
@@ -60,6 +58,8 @@ const HomeContent = () => {
         </div>
     );
 };
+
+export default YouthContent;
 
 const itemData = [
     {
@@ -95,5 +95,3 @@ const itemData = [
         title: 'Spoznavanje gasilnih aparatov'
     }
 ]
-
-export default HomeContent;

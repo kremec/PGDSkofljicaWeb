@@ -1,6 +1,6 @@
 import {Stack, Typography} from "@mui/material";
 
-const HomeContent = () => {
+const ContactContent = () => {
     return (
         <div style={{
             display: 'flex',
@@ -41,4 +41,4 @@ const HomeContent = () => {
     );
 };
 
-export default HomeContent;
+export default ContactContent;
