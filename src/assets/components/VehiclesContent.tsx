@@ -148,7 +148,6 @@ const NonoperativeVehiclesData = [
             <Typography color="text.secondary">
                 Podvozje: TAM 75 T 5 (1979)<br />
                 Nadgradnja: Karoserist Maribor<br />
-                Posadka vozila: 1+8<br />
                 Črpalka: Prenosna motorna brizgalna Rosenbauer 8/8<br />
                 Vozilo je bilo namenjeno gašenju požarov, prevozu moštva, orodja in opreme na kraj intervencije.
             </Typography>
@@ -158,9 +157,8 @@ const NonoperativeVehiclesData = [
         image: "/images/vozniPark/ac_staro.jpg",
         content:
             <Typography color="text.secondary">
-                Podvozje: TAM 75 T 5 (1979)<br />
+                Podvozje: TAM 110 T 10 (1977)<br />
                 Nadgradnja: Karoserist Maribor<br />
-                Posadka vozila: 1+8<br />
                 Črpalka: Turboinštitut - 1600 l/min<br />
                 Prostornina rezervoarja: 5000 litrov<br />
                 Vozilo je bilo zaradi večje količine vode namenjeno oskrbi požarišča z vodo in prevozu pitne vode.
@@ -200,7 +198,7 @@ const NonoperativeVehiclesData = [
     },
     {
         name: "Motorna brizgalna R. A. Smrekal",
-        image: "/images/vozniPark/mb_staro1.jpg",
+        image: "/images/vozniPark/mb_staro2.jpg",
         content:
             <Typography color="text.secondary">
                 Tip: vprežna ročna brizgalna<br />
