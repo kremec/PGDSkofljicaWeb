@@ -42,7 +42,7 @@ const HomeContent = () => {
 
                     <Grid item md={12} padding={2}>
                         <Typography variant="h5" textAlign={"center"}>
-                            Neoperativna vozila
+                            Vozila skozi čas
                         </Typography>
                     </Grid>
                     {NonoperativeVehiclesData.map((vehicle) => {
