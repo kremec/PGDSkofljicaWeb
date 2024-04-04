@@ -45,7 +45,7 @@ const HomeContent = () => {
                             in Pleše.
                             <br /><br />
                             Posredujemo pri gašenju požarov, ob poplavah, neurjih in drugih nesrečah. Za uspešno
-                            posredovanje na intervencijah imamo gasilska vozila GVC-1, GVM, AC, GV-1, in GVC 16/25.
+                            posredovanje na intervencijah imamo gasilska vozila GVC-1, GVM, AC 16/50, GV-1, in GVC 16/35.
                         </Typography>
                     </Grid>
                     <Grid item md={12} lg={6} textAlign={"center"}>

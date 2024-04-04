@@ -75,7 +75,7 @@ export default HomeContent;
 
 const OperativeVehiclesData = [
     {
-        name: "Gasilsko vozilo s cisterno (GVC)",
+        name: "Gasilsko vozilo s cisterno (GVC-1)",
         image: "/images/vozniPark/gvc1.jpg",
         content:
             <Typography color="text.secondary">
@@ -100,7 +100,7 @@ const OperativeVehiclesData = [
             </Typography>
     },
     {
-        name: "Avtocisterna (AC)",
+        name: "Avtocisterna (AC 16/50)",
         image: "/images/vozniPark/ac.jpg",
         content:
             <Typography color="text.secondary">
@@ -113,7 +113,7 @@ const OperativeVehiclesData = [
             </Typography>
     },
     {
-        name: "Orodno gasilsko vozilo (GV)",
+        name: "Orodno gasilsko vozilo (GV-1)",
         image: "/images/vozniPark/gv1.jpg",
         content:
             <Typography color="text.secondary">
@@ -125,7 +125,7 @@ const OperativeVehiclesData = [
             </Typography>
     },
     {
-        name: "Gasilsko vozilo s cisterno (GVC)",
+        name: "Gasilsko vozilo s cisterno (GVC 16/35)",
         image: "/images/vozniPark/gvc1635.jpg",
         content:
             <Typography color="text.secondary">
