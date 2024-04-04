@@ -57,7 +57,7 @@ const TopNavigation = ({updateCenterContentState}: Props) => {
     };
 
     return (
-        <AppBar color="inherit" position="static">
+        <AppBar color="inherit" position="sticky">
             <Toolbar variant="dense">
                 {full && (
                     <>
