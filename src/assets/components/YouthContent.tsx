@@ -49,7 +49,7 @@ const YouthContent = () => {
                 <ImageList style={{textAlign: "center"}} sx={{columnCount: {md: '1 !important', lg: '2 !important', xl: '3 !important'}}} cols={1} variant="masonry" gap={10}>
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
-                            <ModalImage small={item.img} large={item.img} alt={item.title}/>
+                            <ModalImage loading="lazy" small={item.img} large={item.img} alt={item.title}/>
                             <ImageListItemBar position="below" title={item.title}/>
                         </ImageListItem>
                     ))}
@@ -63,35 +63,35 @@ export default YouthContent;
 
 const itemData = [
     {
-        img: '/images/mladina/mladina_1.jpg',
+        img: '/images/mladina/mladina_1.webp',
         title: 'Uspeh mladincev na gasilskem kvizu'
     },
     {
-        img: '/images/mladina/mladina_2.jpg',
+        img: '/images/mladina/mladina_2.webp',
         title: 'Na startu gasilske orientacije'
     },
     {
-        img: '/images/mladina/mladina_3.jpg',
+        img: '/images/mladina/mladina_3.webp',
         title: 'Vaja z vedrovko'
     },
     {
-        img: '/images/mladina/mladina_4.jpg',
+        img: '/images/mladina/mladina_4.webp',
         title: 'Vaja z vozli'
     },
     {
-        img: '/images/mladina/mladina_5.jpg',
+        img: '/images/mladina/mladina_5.webp',
         title: 'Spoznavanje izolirnih dihalnih aparatov'
     },
     {
-        img: '/images/mladina/mladina_6.jpg',
+        img: '/images/mladina/mladina_6.webp',
         title: 'Zaključni izlet v adrenalinskem parku'
     },
     {
-        img: '/images/mladina/mladina_7.jpg',
+        img: '/images/mladina/mladina_7.webp',
         title: 'Še ena gasilska'
     },
     {
-        img: '/images/mladina/mladina_8.jpg',
+        img: '/images/mladina/mladina_8.webp',
         title: 'Spoznavanje gasilnih aparatov'
     }
 ]

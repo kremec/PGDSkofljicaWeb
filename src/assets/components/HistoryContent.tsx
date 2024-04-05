@@ -68,7 +68,9 @@ const HistoryContent = () => {
                     Prva svetovna vojna je zaustavila delovanje društva, vedno pa je sodelovalo pri nezgodah in požarih.
                 </Typography>
 
-                <ModalImage small="/images/zgodovina/zgodovina_1.jpg" large="/images/zgodovina/zgodovina_1.jpg" alt={""} />
+                <Stack textAlign="center">
+                    <ModalImage loading="lazy" small="/images/zgodovina/zgodovina_1.webp" large="/images/zgodovina/zgodovina_1.webp" alt={""} />
+                </Stack>
 
                 <Typography variant="h4">
                     1920 - 1940
@@ -138,7 +140,9 @@ const HistoryContent = () => {
                     litrov na minuto.
                 </Typography>
 
-                <ModalImage small="/images/zgodovina/zgodovina_2.jpg" large="/images/zgodovina/zgodovina_2.jpg" alt={""} />
+                <Stack textAlign="center">
+                    <ModalImage loading="lazy" small="/images/zgodovina/zgodovina_2.webp" large="/images/zgodovina/zgodovina_2.webp" alt={""} />
+                </Stack>
 
                 <Typography variant="h4">
                     1970 - 1980
@@ -181,7 +185,9 @@ const HistoryContent = () => {
                     mesto intervencije. Slavnostni prevzem vozila, je bil ob 100 letnici delovanja PGD Škofljica.
                 </Typography>
 
-                <ModalImage small="/images/zgodovina/zgodovina_3.jpg" large="/images/zgodovina/zgodovina_3.jpg" alt={""} />
+                <Stack textAlign="center">
+                    <ModalImage loading="lazy" small="/images/zgodovina/zgodovina_3.webp" large="/images/zgodovina/zgodovina_3.webp" alt={""} />
+                </Stack>
 
                 <Typography variant="h4">
                     2000 - 2010

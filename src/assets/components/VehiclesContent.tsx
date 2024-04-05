@@ -52,7 +52,7 @@ const HomeContent = () => {
                                 <Card>
                                     <CardMedia component="div"
                                         sx={{ objectFit: "contain" }}>
-                                        <ModalImage small={vehicle.image} large={vehicle.image} alt={vehicle.name} />
+                                        <ModalImage loading="lazy" small={vehicle.image} large={vehicle.image} alt={vehicle.name} />
                                     </CardMedia>
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="div">
@@ -76,7 +76,7 @@ export default HomeContent;
 const OperativeVehiclesData = [
     {
         name: "Gasilsko vozilo s cisterno (GVC-1)",
-        image: "/images/vozniPark/gvc1.jpg",
+        image: "/images/vozniPark/gvc1.webp",
         content:
             <Typography color="text.secondary">
                 Podvozje: MAN 13.290 (2021)<br />
@@ -90,7 +90,7 @@ const OperativeVehiclesData = [
     },
     {
         name: "Gasilsko vozilo za moštvo (GVM)",
-        image: "/images/vozniPark/gvm.jpg",
+        image: "/images/vozniPark/gvm.webp",
         content:
             <Typography color="text.secondary">
                 Podvozje: Volkswagen Transporter (2016)<br />
@@ -101,7 +101,7 @@ const OperativeVehiclesData = [
     },
     {
         name: "Avtocisterna (AC 16/50)",
-        image: "/images/vozniPark/ac.jpg",
+        image: "/images/vozniPark/ac.webp",
         content:
             <Typography color="text.secondary">
                 Podvozje: Mercedes Benz 1329 (2006)<br />
@@ -114,7 +114,7 @@ const OperativeVehiclesData = [
     },
     {
         name: "Orodno gasilsko vozilo (GV-1)",
-        image: "/images/vozniPark/gv1.jpg",
+        image: "/images/vozniPark/gv1.webp",
         content:
             <Typography color="text.secondary">
                 Podvozje: Mercedes Benz Sprinter 313 (2001)<br />
@@ -126,7 +126,7 @@ const OperativeVehiclesData = [
     },
     {
         name: "Gasilsko vozilo s cisterno (GVC 16/35)",
-        image: "/images/vozniPark/gvc1635.jpg",
+        image: "/images/vozniPark/gvc1635.webp",
         content:
             <Typography color="text.secondary">
                 Podvozje: Marcedes Benz 1324 (1992)<br />
@@ -143,7 +143,7 @@ const OperativeVehiclesData = [
 const NonoperativeVehiclesData = [
     {
         name: "Orodno gasilsko vozilo",
-        image: "/images/vozniPark/gv_staro.jpg",
+        image: "/images/vozniPark/gv_staro.webp",
         content:
             <Typography color="text.secondary">
                 Podvozje: TAM 75 T 5 (1979)<br />
@@ -154,7 +154,7 @@ const NonoperativeVehiclesData = [
     },
     {
         name: "Avtocisterna",
-        image: "/images/vozniPark/ac_staro.jpg",
+        image: "/images/vozniPark/ac_staro.webp",
         content:
             <Typography color="text.secondary">
                 Podvozje: TAM 110 T 10 (1977)<br />
@@ -166,7 +166,7 @@ const NonoperativeVehiclesData = [
     },
     {
         name: "Gasilsko vozilo",
-        image: "/images/vozniPark/gv_staro1.jpg",
+        image: "/images/vozniPark/gv_staro1.webp",
         content:
             <Typography color="text.secondary">
                 Podvozje: IMV 1600 Super B<br />
@@ -176,7 +176,7 @@ const NonoperativeVehiclesData = [
     },
     {
         name: "Gasilsko vozilo",
-        image: "/images/vozniPark/gv_staro2.jpg",
+        image: "/images/vozniPark/gv_staro2.webp",
         content:
             <Typography color="text.secondary">
                 Podvozje: Ford BB<br />
@@ -184,7 +184,7 @@ const NonoperativeVehiclesData = [
     },
     {
         name: "Motorna brizgalna Rosenbauer",
-        image: "/images/vozniPark/mb_staro1.jpg",
+        image: "/images/vozniPark/mb_staro1.webp",
         content:
             <Typography color="text.secondary">
                 Tip: vprežna motorna brizgalna<br />
@@ -198,7 +198,7 @@ const NonoperativeVehiclesData = [
     },
     {
         name: "Motorna brizgalna R. A. Smrekal",
-        image: "/images/vozniPark/mb_staro2.jpg",
+        image: "/images/vozniPark/mb_staro2.webp",
         content:
             <Typography color="text.secondary">
                 Tip: vprežna ročna brizgalna<br />
