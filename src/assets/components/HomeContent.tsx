@@ -13,16 +13,15 @@ const HomeContent = () => {
                 <Grid container direction="row" spacing={10} textAlign={"center"}>
                     <Grid item md={12} lg={6}>
                         <Grid container direction="row" spacing={2}>
-                            <Grid item xs={3} display={"flex"} justifyContent={"center"} alignItems={"center"}
-                                textAlign={"right"}>
+                            <Grid item xs={3} display={"flex"} justifyContent={"center"} alignItems={"center"}>
                                 <Box
                                     width="50%"
                                     component="img"
                                     alt="Logo"
-                                    src="/images/PGD_logo_znak.png"
+                                    src="/images/PGD_logo_znak.webp"
                                 />
                             </Grid>
-                            <Grid item xs={9}>
+                            <Grid item xs={9} display={"flex"} justifyContent={"center"} alignItems={"center"}>
                                 <Typography fontWeight={"bold"} variant="h4">
                                     Prostovoljno gasilsko<br />
                                     društvo Škofljica
@@ -32,7 +31,7 @@ const HomeContent = () => {
                         <div style={{ marginTop: '10px' }} />
                         <Divider />
                         <div style={{ marginBottom: '20px' }} />
-                        <ModalImage small={"/images/operativa.jpg"} large={"/images/operativa.jpg"} alt={"Operativni gasilci PGD Škofljica"} />
+                        <ModalImage small={"/images/operativa.webp"} large={"/images/operativa.webp"} alt={"Operativni gasilci PGD Škofljica"} />
                         <Typography variant="h5">
                             O nas
                         </Typography>
