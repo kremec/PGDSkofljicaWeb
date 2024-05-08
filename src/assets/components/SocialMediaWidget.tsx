@@ -1,5 +1,3 @@
-import JuicerFeed from 'react-juicer-feed';
-
 const SocialMediaWidget = () => {
     // useEffect(() => {
     //     const script = document.createElement('script');
