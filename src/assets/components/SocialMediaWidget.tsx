@@ -4,7 +4,7 @@ const SocialMediaWidget = () => {
     const scriptRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
         const script = document.createElement('script');
-        script.src = 'https://www.juicer.io/embed/pgd-skofljica/embed-code.js';
+        script.src = 'https://www.juicer.io/embed/pgd-skofljica/embed-code.js?per=15?truncate=500';
         script.async = true;
         script.defer = true;
         
