@@ -1,4 +1,3 @@
-import {useEffect} from "react";
 import JuicerFeed from 'react-juicer-feed';
 
 const SocialMediaWidget = () => {
