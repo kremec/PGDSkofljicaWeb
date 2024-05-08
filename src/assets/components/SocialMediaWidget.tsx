@@ -1,4 +1,24 @@
+import { useEffect, useRef } from "react";
+
 const SocialMediaWidget = () => {
+    const scriptRef = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://www.juicer.io/embed/pgd-skofljica/embed-code.js';
+        script.async = true;
+        script.defer = true;
+        
+        if (scriptRef.current) {
+            scriptRef.current.appendChild(script);
+        }
+
+        return () => {
+            // Cleanup: remove the script when component unmounts
+            if (scriptRef.current && scriptRef.current.firstChild) {
+                scriptRef.current.removeChild(scriptRef.current.firstChild);
+            }
+        };
+    }, []);
     // useEffect(() => {
     //     const script = document.createElement('script');
     //     script.src = 'https://static.elfsight.com/platform/platform.js';
@@ -50,11 +70,7 @@ const SocialMediaWidget = () => {
 
     return (
         //<div className="elfsight-app-2559c59f-8f5c-4de5-b360-70018ef9f66c data-elfsight-app-lazy"></div>
-        <>
-            <script src="//assets.juicer.io/embed.js?per=15?truncate=500" type="text/javascript"></script>
-            <link href="//assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
-            <ul className="juicer-feed" data-feed-id="pgd-skofljica"></ul>
-        </>
+        <div id="juicer-pgd-skofljica" ref={scriptRef}></div>
     );
 };
 
