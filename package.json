@@ -21,6 +21,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed",
+    "react-juicer-feed": "^0.0.2-alpha-4",
     "react-modal-image": "^2.6.0",
     "react-modal-image-responsive": "^1.2.0",
     "react-router": "^6.16.0",
