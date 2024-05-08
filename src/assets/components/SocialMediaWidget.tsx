@@ -52,7 +52,11 @@ const SocialMediaWidget = () => {
 
     return (
         //<div className="elfsight-app-2559c59f-8f5c-4de5-b360-70018ef9f66c data-elfsight-app-lazy"></div>
-        <JuicerFeed feedId="pgd-skofljica" />
+        <>
+            <script src="//assets.juicer.io/embed.js?per=15?truncate=500" type="text/javascript"></script>
+            <link href="//assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+            <ul className="juicer-feed" data-feed-id="pgd-skofljica"></ul>
+        </>
     );
 };
 
