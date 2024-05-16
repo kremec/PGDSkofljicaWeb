@@ -25,12 +25,13 @@ const SocialMediaWidget = () => {
         function handleElementLoaded(element: Element) {
 
             if (element) {
+                console.log(element);
                 (element as HTMLElement).style.display = "none";
             }
         }
         function checkElements() {
             const elementReferral = document.querySelector('h1[class="referral"]');
-            const elementPost = document.querySelector('div[class="juicer-about"]');
+            const elementPost = document.querySelector('li[class="feed-item juicer image-post juicer-about"]');
 
             if (elementReferral) {
                 handleElementLoaded(elementReferral);
