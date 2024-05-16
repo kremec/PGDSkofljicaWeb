@@ -26,7 +26,9 @@ const SocialMediaWidget = () => {
 
             if (element) {
                 console.log(element);
-                (element as HTMLElement).style.display = "none";
+                if (element.parentNode) {
+                    element.parentNode.removeChild(element);
+                }
             }
         }
         function checkElements() {
