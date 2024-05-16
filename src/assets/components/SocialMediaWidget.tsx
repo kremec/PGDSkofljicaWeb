@@ -28,25 +28,30 @@ const SocialMediaWidget = () => {
                 (element as HTMLElement).style.display = "none";
             }
         }
-        function checkElement() {
-            const element = document.querySelector('h1[class="referral"]');
+        function checkElements() {
+            const elementReferral = document.querySelector('h1[class="referral"]');
+            const elementPost = document.querySelector('div[class="juicer-about"]');
 
-            if (element) {
-                handleElementLoaded(element);
+            if (elementReferral) {
+                handleElementLoaded(elementReferral);
+                clearInterval(intervalId);
+            }
+            if (elementPost) {
+                handleElementLoaded(elementPost);
                 clearInterval(intervalId);
             }
         }
 
         if (document.readyState === 'complete') {
-            checkElement();
+            checkElements();
         } else {
             // If the DOM is not yet loaded, add an event listener
-            document.addEventListener('DOMContentLoaded', checkElement);
+            document.addEventListener('DOMContentLoaded', checkElements);
         }
-        const intervalId = setInterval(checkElement, 100);
+        const intervalId = setInterval(checkElements, 100);
 
         return () => {
-            document.removeEventListener('DOMContentLoaded', checkElement);
+            document.removeEventListener('DOMContentLoaded', checkElements);
             clearInterval(intervalId);
         };
     }, []);
