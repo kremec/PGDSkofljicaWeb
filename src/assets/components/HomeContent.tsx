@@ -47,7 +47,7 @@ const HomeContent = () => {
                             posredovanje na intervencijah imamo gasilska vozila GVC-1, GVM, AC 16/50, GV-1, in GVC 16/35.
                         </Typography>
                     </Grid>
-                    <Grid item md={12} lg={6} textAlign={"center"}>
+                    <Grid item md={12} lg={6} textAlign={"center"} sx={{ width: { xs: '100%', md: 'auto' } }}>
                         <Typography variant="h5" paddingBottom={3}>
                             Novice in objave
                         </Typography>

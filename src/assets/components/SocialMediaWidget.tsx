@@ -2,66 +2,62 @@ import { useEffect, useRef } from "react";
 
 const SocialMediaWidget = () => {
     const scriptRef = useRef<HTMLDivElement>(null);
+
+    // Load the widget script
     useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://www.juicer.io/embed/pgd-skofljica/embed-code.js?per=4&truncate=100';
-        script.async = true;
-        script.defer = true;
-        
-        if (scriptRef.current) {
-            scriptRef.current.appendChild(script);
+        const loadScript = () => {
+            const script = document.createElement('script');
+            script.src = 'https://widget.taggbox.com/embed-lite.min.js';
+            script.async = true;
+            script.defer = true;
+
+            if (scriptRef.current) {
+                scriptRef.current.appendChild(script);
+            }
+        };
+
+        if (document.readyState === 'complete') {
+            loadScript();
+        } else {
+            window.addEventListener('load', loadScript);
         }
 
         return () => {
-            // Cleanup: remove the script when component unmounts
-            if (scriptRef.current && scriptRef.current.firstChild) {
-                scriptRef.current.removeChild(scriptRef.current.firstChild);
-            }
+            window.removeEventListener('load', loadScript);
         };
     }, []);
 
     // Remove watermark
     useEffect(() => {
-        function handleElementLoaded(element: Element) {
-
-            if (element) {
-                console.log(element);
-                if (element.parentNode) {
-                    element.parentNode.removeChild(element);
+        const removeWatermark = () => {
+            const container = document.querySelector('.tb_theme_container');
+            if (container) {
+                const children = container.children;
+                for (let i = 0; i < children.length; i++) {
+                    if (!children[i].classList.length) {
+                        container.removeChild(children[i]);
+                        break;
+                    }
                 }
             }
-        }
-        function checkElements() {
-            const elementReferral = document.querySelector('h1[class="referral"]');
-            const elementPost = document.querySelector('li[class="feed-item juicer image-post juicer-about"]');
+        };
 
-            if (elementReferral) {
-                handleElementLoaded(elementReferral);
-                clearInterval(intervalId);
-            }
-            if (elementPost) {
-                handleElementLoaded(elementPost);
-                clearInterval(intervalId);
-            }
-        }
+        const intervalId = setInterval(removeWatermark, 50);
 
         if (document.readyState === 'complete') {
-            checkElements();
+            removeWatermark();
         } else {
-            // If the DOM is not yet loaded, add an event listener
-            document.addEventListener('DOMContentLoaded', checkElements);
+            document.addEventListener('DOMContentLoaded', removeWatermark);
         }
-        const intervalId = setInterval(checkElements, 100);
 
         return () => {
-            document.removeEventListener('DOMContentLoaded', checkElements);
             clearInterval(intervalId);
+            document.removeEventListener('DOMContentLoaded', removeWatermark);
         };
     }, []);
 
     return (
-        //<div className="elfsight-app-2559c59f-8f5c-4de5-b360-70018ef9f66c data-elfsight-app-lazy"></div>
-        <div id="juicer-pgd-skofljica" ref={scriptRef}></div>
+        <div ref={scriptRef} className="taggbox" style={{ width: "100%", height: "100%" }} data-widget-id="155285" data-tags="false"></div>
     );
 };
 
