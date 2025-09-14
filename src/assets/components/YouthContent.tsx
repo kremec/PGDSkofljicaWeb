@@ -49,9 +49,9 @@ const YouthContent = () => {
           <Typography>
             <b>Tedensko srečanje mladine:</b>
             <br />
-            Pionirji (od 7 do 11 let): četrtek ob 18. uri
+            Pionirji (od 7 do 11 let): torek ob 18. uri
             <br />
-            Mladinci (od 12 do 15 let): torek ob 18. uri
+            Mladinci (od 12 do 15 let): ponedeljek ob 18. uri
             <br />
             Pripravniki (od 16 do 18 let): torek ob 18. uri
           </Typography>
