@@ -125,7 +125,7 @@ const OperativeVehiclesData = [
     image: "/images/vozniPark/ac.webp",
     content: (
       <Typography color="text.secondary">
-        Podvozje: Mercedes Benz 1329 (2006)
+        Podvozje: Mercedes Benz 1529 (2006)
         <br />
         Nadgradnja: Elektro Turnšek (2007) / Rosenbauer (2023)
         <br />
