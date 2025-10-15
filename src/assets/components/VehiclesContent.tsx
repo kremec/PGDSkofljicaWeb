@@ -144,7 +144,7 @@ const OperativeVehiclesData = [
     image: "/images/vozniPark/gv1.webp",
     content: (
       <Typography color="text.secondary">
-        Podvozje: Mercedes Benz Sprinter 313 (2001)
+        Podvozje: Mercedes Benz Sprinter 414 (2001)
         <br />
         Nadgradnja: Gasilska vozila Pušnik (2001)
         <br />
